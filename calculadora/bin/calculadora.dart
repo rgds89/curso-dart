@@ -40,8 +40,7 @@ void main() {
   void getOperacao() {
     print('Informe a operação ${operacoesValidas.toString()}:');
     entrada = stdin.readLineSync()!;
-    if (entrada != null &&
-        entrada.isNotEmpty &&
+    if (entrada.isNotEmpty &&
         operacoesValidas.contains(entrada)) {
       operacao = entrada;
     } else {
@@ -52,7 +51,7 @@ void main() {
 
   print('Informe o primeiro número:');
   entrada = stdin.readLineSync()!;
-  if (entrada != null && entrada.isNotEmpty) {
+  if (entrada.isNotEmpty) {
     numeroUm = double.parse(entrada);
   }
 
@@ -60,7 +59,7 @@ void main() {
 
   print('Informe o segundo número:');
   entrada = stdin.readLineSync()!;
-  if (entrada != null && entrada.isNotEmpty) {
+  if (entrada.isNotEmpty) {
     numeroDois = double.parse(entrada);
   }
 
